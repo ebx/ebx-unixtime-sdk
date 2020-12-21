@@ -15,6 +15,37 @@
     <maven.javadoc.skip>true</maven.javadoc.skip>
   </properties>
 
+  <licenses>
+    <license>
+      <name>Apache License, Version 2.0</name>
+      <url>https://raw.githubusercontent.com/ebx/ebx-unixtime-sdk/master/LICENSE</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
+
+  <scm>
+    <connection>scm:git:https://github.com/ebx/ebx-unixtime-sdk</connection>
+    <url>https://github.com/ebx/ebx-unixtime-sdk</url>
+  </scm>
+
+  <distributionManagement>
+    <snapshotRepository>
+      <id>ossrh</id>
+      <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+    </snapshotRepository>
+    <repository>
+      <id>ossrh</id>
+      <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+    </repository>
+  </distributionManagement>
+
+  <developers>
+    <developer>
+      <name>Echobox</name>
+      <organizationUrl>http://www.echobox.com</organizationUrl>
+    </developer>
+  </developers>
+
   <dependencies>
   </dependencies>
 
