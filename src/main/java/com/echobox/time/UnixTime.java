@@ -19,6 +19,7 @@ package com.echobox.time;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.TimeZone;
 
 /**
  * A simple utility class to get the current unix time in a more concise fashion!
@@ -37,31 +38,32 @@ public class UnixTime {
   }
 
   /**
-   * Formats the provided Unix time in GMT for debugging purposes
+   * Formats the provided Unix time in UTC for debugging purposes
    *
    * @param unixTime the unix time
    * @return string string
    */
-  public static String formatUnixTime(Long unixTime) {
+  public static String formatUnixTimeUTC(Long unixTime) {
     if (unixTime == null) {
       return "NULL";
     }
 
     Date date = new Date(unixTime * 1000L); // *1000 is to convert seconds to milliseconds
     SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss z"); // the format of your date
+    sdf.setTimeZone(TimeZone.getTimeZone("UTC"));
     return sdf.format(date);
   }
 
   /**
-   * Formats the provided Unix time in GMT for debugging purposes
+   * Formats the provided Unix time in UTC for debugging purposes
    *
    * @param unixTime the unix time
    * @return string string
    */
-  public static String formatUnixTime(Integer unixTime) {
+  public static String formatUnixTimeUTC(Integer unixTime) {
     if (unixTime == null) {
       return "NULL";
     }
-    return formatUnixTime((long) unixTime);
+    return formatUnixTimeUTC((long) unixTime);
   }
 }
