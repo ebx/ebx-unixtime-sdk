@@ -17,7 +17,7 @@ How have the changes been tested and the potential risks mitigated?
 
 ### Compare (For layered PRs)
 
-Generate compare URL from https://github.com/ebx/ebx-linkedin-sdk/compare so that it's easily accessible. This is ONLY REQUIRED FOR COMPLICATED, DEPENDENT OR LAYERED PRs. Feel free to delete this section if not required.
+Generate compare URL from https://github.com/ebx/ebx-unixtime-sdk/compare so that it's easily accessible. This is ONLY REQUIRED FOR COMPLICATED, DEPENDENT OR LAYERED PRs. Feel free to delete this section if not required.
 
 ## Final Checklist
 
