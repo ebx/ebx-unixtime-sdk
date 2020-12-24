@@ -106,8 +106,7 @@
             <configuration>
               <configLocation>CodeStyle/checkstyle.xml</configLocation>
               <consoleOutput>true</consoleOutput>
-              <failsOnError>false</failsOnError>
-              <failOnViolation>false</failOnViolation>
+              <failsOnError>true</failsOnError>
               <includeTestSourceDirectory>true</includeTestSourceDirectory>
               <propertyExpansion>basedir=${project.basedir}</propertyExpansion>
             </configuration>
