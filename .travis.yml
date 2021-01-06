@@ -51,7 +51,7 @@ deploy:
   skip_cleanup: true
   on:
     repo: $REPO
-    branch: $DEV_BRANCH
+    branch: $RELEASE_BRANCH
   name: v$MVN_VERSION
   
 cache:
