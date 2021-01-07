@@ -21,6 +21,18 @@ long unixTimestamp = Instant.now().getEpochSecond();
 Wherever unix times are required (and form part of business logic) the preferred usage is to
  inject `java.time.Clock` into constructors or failing that `Supplier<Long>`.
 
+## Installation
+
+For our latest stable release use:
+
+```
+<dependency>
+  <groupId>com.echobox</groupId>
+  <artifactId>ebx-unixtime-sdk</artifactId>
+  <version>2.0.0</version>
+</dependency>
+```
+
 ## Example using `java.time.Clock`
 
 Important: When testing please use `Clock.fixed(Instant.parse("2017-10-22T07:52
