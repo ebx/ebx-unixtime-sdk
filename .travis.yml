@@ -43,12 +43,12 @@ before_deploy:
 deploy:
   provider: releases
   api_key:
-    secure: HqOdpBYEv0RATPBcKK7N6NdfSOVZhOJPWAtH0Wi7eFIp9tsHXOGPbVg8T/fS1Pi8ciTC2idWK0hVIQYs4wbM+VWvOECV4t7C5Ey0SwuPN2SS4lsRCUEQA1Gn6Akgwfen+T0qhblL4gMZ1aYoyReunjvNqaI+Y1+AmIaGPClVMfJCyb8Z6GrxQ2/9X+Fc3kVZ/UUKACXg+e2fGLPYptSj/Zd8mRWs6Jf14XdJT+5a0j5flTcHQf8WxF+gURG0kXzDB5P70QeSq75y7bZBWpNdlrypoLx5PeBYJlDCyTYp98Pa2nUVGnoltfqhCofhx0C9VGqQ2AMbQmHZNa56kjq9Q9YhFS+qvvauCm28K//cAcW86PiH8CezfAF+Xm1s1V+Gwq6YkNocQ9dCQ0mfq1URrL9EUWGZe9pgo9PBX4YvDGkWnGA+qNtI+LQcXIth2XxNmKM28e20f7J9rC+URXmfY9uDX3KB/d/PTgE0k2fGJxxSit0Gi5E7twmNMS76FTD9XLQ0ZPNd95aslABNWO52/N6vDqbq9ytq/3vvfk1ZLniqqHHU5xzzzLKI/IGNH+PzdLfAhLVde2XlhPNSiL6ZdFx6pIqFIJ6aldLcbnxkuS7Ce/o0Z5Ko8gQ/OeJIyPgXxa3IhXthRfPBqeSVw4sDCXP72QGsOQugG2DyMfhTclo=
+    secure: UhX6uT4ak5DyWK9oHE2oUpLMa39U0XTe9J0xcyQ1Wu/uhr+nf5yNMUTIkBybuxL89tB314YJ9XGkXpbQR5ef3xIGyXAtVdaHGqWdRbfoq6JS1/Vep6yxraPgy32G5mA8QFCGzUXqPtDgvZ+VDnJlWflEUm46VPOS8tsHhKxKgstajKcG1iGet4PSeP10TRKQ+G5ubs5UkaHn83+NGxwISx9Ma/cvdiMOp+7otDj1nShYgUTS9KYMP/82JNlgJT2VxbR6XbnoJdnypWWQmoycCUDOOOyhDUB6IXrFt7h1PrWbUTzMl57qZJNDtfsfZFH/Ym7imFcZPaxLuckMBHAJN+V5mPKFM5dXyQfM2z8wfq1/rBhKxkYoX7vDSGUhTU2eE+Cqz5nEx4kYaMa1dMPiYzg+O3m1SnlpZCZOSvDR1SnJVvmR+9VsMKSMRB3cFWD371aaHJux+NgPD1Px8MDJ8/TmKboE+yaVXmvHyDG9pEhLjV8XDvhFjKQLQsA/UUyglY+LxWYWSIDZ7OGXeip58gawH+pfIoWNZ42j0KSSaaXHVheZkhe3LvlAMrKKmqn3T1DgdwSoRWnK9pQAqYd9FfxD9vvr3dCKk/P84VS51QW6CNx9hHVPLGIZxhki+dchSgl15zSRuOWsPkQsnQTprogimZoyZQjq0q28mdtIdGs=
   file: 
     - target/ebx-unixtime-sdk-$MVN_VERSION.jar
     - target/ebx-unixtime-sdk-$MVN_VERSION-javadoc.jar
     - target/ebx-unixtime-sdk-$MVN_VERSION-sources.jar
-  skip_cleanup: true
+  edge: true
   on:
     repo: $REPO
     branch: $RELEASE_BRANCH
